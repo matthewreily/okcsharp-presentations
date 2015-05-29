@@ -10,7 +10,6 @@ namespace LiveCodeAnalysisDemo
     //Show rename
     public class SweetClass1
     {
-        
         public String MyString { get; set; }
         public string anotherString { get;set; }
 
