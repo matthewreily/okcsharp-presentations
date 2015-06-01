@@ -55,6 +55,7 @@
     <Compile Include="3_NameofExpressionsTests.cs" />
     <Compile Include="4_StringInterpolationTests.cs" />
     <Compile Include="5_IndexInitializersTest.cs" />
+    <Compile Include="9_ExpressionBodiedMethods.cs" />
     <Compile Include="Stuff\LoggingService.cs" />
     <Compile Include="Stuff\AwesomService.cs" />
     <Compile Include="8_StaticUsingStatemets.cs" />

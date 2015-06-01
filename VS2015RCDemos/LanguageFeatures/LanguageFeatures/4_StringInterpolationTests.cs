@@ -16,6 +16,13 @@ namespace LanguageFeatures
             public string LName { get; } = "Reily";
 
         }
+
+        public string GetGreetingOld(Person person)
+        {
+            return string.Format("Hello {0} {1}", person.FName, person.LName);
+        }
+
+        #region new
         public string GetGreeting(Person person)
         {
             return $"Hello {person.FName} {person.LName}";
@@ -24,8 +31,8 @@ namespace LanguageFeatures
         public void Get_Greeting_Equals()
         {
             var person = new Person();
-            var greeting = string.Format("Hello {0} {1}", person.FName, person.LName);
-            Assert.AreEqual(greeting, GetGreeting(person));
+            Assert.AreEqual(GetGreetingOld(person), GetGreeting(person));
         }
+        #endregion
     }
 }

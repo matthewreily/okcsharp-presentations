@@ -8,6 +8,28 @@ namespace LanguageFeatures
 {
     public class AutoPropertInitializers
     {
+
+        #region old  
+
+        private string _first = "Foo";
+        public string First { get { return _first; } }
+
+        private string _last;
+        public string Last
+        {
+            get
+            {
+                return _last;
+            }
+            set
+            {
+                _last = value;
+            }
+        }
+
+        #endregion
+
+        #region new
         //Any .NET developer who has ever properly implemented a struct has undoubtedly been bothered by 
         //how much syntax it takes to make the type immutable (as .NET standards suggest it should be).  
 
@@ -21,5 +43,7 @@ namespace LanguageFeatures
 
         //mutable
         public string Person { get; set; } = "Matt";
+
+        #endregion
     }
 }

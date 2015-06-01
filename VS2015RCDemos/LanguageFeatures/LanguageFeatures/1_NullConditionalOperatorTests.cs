@@ -24,6 +24,7 @@ namespace LanguageFeatures
             return result;
         }
 
+        #region new
         //If it wasn’t for the check for null, the method would throw a NullReferenceException. 
         //Although it’s simple, having to check the string parameter for null is somewhat verbose. 
         //Often, that verbose approach is likely unnecessary given the frequency of the comparison. 
@@ -37,4 +38,6 @@ namespace LanguageFeatures
         {
             Assert.AreEqual<string>(null, Truncate(null, 42));
         }
+        #endregion
     }
+}

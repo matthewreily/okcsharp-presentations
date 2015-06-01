@@ -11,6 +11,6 @@ namespace LiveCodeAnalysisDemo
         /// <summary>
         /// SweetClass property
         /// </summary>
-        public SweetClass1 MyClass { get; set; }
+        public SweetClass MyClass { get; set; }
     }
 }

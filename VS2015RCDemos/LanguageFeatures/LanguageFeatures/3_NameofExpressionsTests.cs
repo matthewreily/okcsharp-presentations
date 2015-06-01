@@ -24,15 +24,18 @@ namespace LanguageFeatures
         //To address this idiosyncrasy, C# 6.0 provides access to a “program element” name, whether it’s a class name, 
         //method name, parameter name or particular attribute name (perhaps when using reflection).
 
+        
         void ThrowArgumentNullException(string param1)
         {
             throw new ArgumentNullException("param1");
         }
 
+        #region new
         void ThrowArgumentNullExceptionUsingNameOf(string param1)
         {
             throw new ArgumentNullException(nameof(param1));
         }
+
         [TestMethod]
         public void NameOf_UsingNameofExpressionInArgumentNullException()
         {
@@ -65,5 +68,6 @@ namespace LanguageFeatures
                   string.Format("{0}", nameof(Nameof_ExtractsName)));
             }
         }
+        #endregion
     }
 }

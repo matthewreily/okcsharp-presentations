@@ -6,7 +6,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace LanguageFeatures
 {
-   
+
     public class ExceptionFilteringTests
     {
         [TestMethod]

@@ -8,7 +8,7 @@ using static System.Console;
 namespace LiveCodeAnalysisDemo
 {
     //Show rename
-    public class SweetClass1
+    public class SweetClass
     {
         public String MyString { get; set; }
         public string anotherString { get;set; }
@@ -19,7 +19,8 @@ namespace LiveCodeAnalysisDemo
             var newNumber = Convert.ToDouble(args[0]) + Convert.ToDouble(args[0]);
 
             //show in-line temporary variable
-            var evenNewerNumber = newNumber * Convert.ToDouble(args[0]);
+            var firstArgument = args[0];
+            Console.WriteLine(firstArgument);
 
             //Show rename
             var icntType = 100;
