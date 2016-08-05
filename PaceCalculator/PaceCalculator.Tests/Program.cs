@@ -13,7 +13,7 @@ namespace PaceCalculator.Tests
            Assert.Equal(3 * 60 * 60, timeSpan.TotalSeconds); 
         }
         [Fact]
-        public void ThrowsArguementExceptionForUnexpectedValue()
+        public void ThrowsArgumentExceptionForUnexpectedValue()
         {
             var time = "3.3.3";
             Assert.Throws<ArgumentException>(()=> time.ToTimeSpan());
